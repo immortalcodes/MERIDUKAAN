@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Products from './components/Products';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar />
+    <Products />
     <Footer/>
   </React.StrictMode>
 );

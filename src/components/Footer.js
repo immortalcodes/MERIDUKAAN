@@ -1,12 +1,17 @@
 import React from 'react';
+import footer_image from '../assets/img/footer.png'
 
 
 export default function Footer() {
     return (
-        <div className="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 px-4 py-12">
+
+        <div className='relative bottom-0 left-0 right-0'>
+        <div className="relative">
+            <img src={footer_image}></img>
+        <div className="absolute top-0 left-0 mr-auto container xl:px-20 lg:px-12 sm:px-6 px-4 px-4 py-12">
             <div className="flex flex-col items-center justify-center">
                 <div>
-                   <p>ImmortalCodes</p> 
+                   <p className='font-black'>ImmortalCodes</p> 
                 </div>
                 <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-8">
                     <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800">About</p>
@@ -51,6 +56,8 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
     );
 };
