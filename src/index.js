@@ -6,13 +6,23 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Products from './components/Products';
+import{BrowserRouter as Router,Switch,Route, Routes} from'react-router-dom'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
+    <Router>
     <Navbar />
-    <Products />
+    <switch>
+      <Routes>
+    <Route path="/products" exact element={<Products />} />
+    </Routes>
+    </switch>
+    
     <Footer/>
+    </Router>
   </React.StrictMode>
 );
 
