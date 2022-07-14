@@ -5,7 +5,7 @@ import profile_image from '../assets/img/profile.png'
 import Products from './Products';
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
-  { name: 'Products', href: '#', current: false },
+  { name: 'Products', href: '/products', current: false },
   { name: 'Settings', href: '#', current: false },
   { name: 'About', href: '#', current: false }
 
