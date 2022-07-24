@@ -1,11 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Products from './components/Products';
+import{BrowserRouter as Router,Switch,Route, Routes} from'react-router-dom'
 
 function App() {
   return (
-    <h1 className="text-3xl text-blue-600/100 font-bold underline">
-      Hello world!
-    </h1>
+    <React.StrictMode>
+      <Router>
+        <Navbar />
+        <switch>
+          <Routes>
+            <Route path="/products" exact element={<Products />} />
+          </Routes>
+        </switch>
+
+        <Footer />
+      </Router>
+    </React.StrictMode>
   );
 }
 

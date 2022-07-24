@@ -16,6 +16,9 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  let current = () => {
+  console.log(this.id)
+  }
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -44,6 +47,7 @@ export default function Navbar() {
                         key={item.name}
                         id={"navite" + item.name}
                         href={item.href}
+                        onClick={current}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
@@ -138,3 +142,4 @@ export default function Navbar() {
     </Disclosure>
   )
 }
+
