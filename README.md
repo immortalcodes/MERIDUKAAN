@@ -1,3 +1,10 @@
+# Meri Dukaan
+This is a Digital Shop Management System Application for the small shops and trading firms
+![Wavy_Bus-16_Single-07](https://user-images.githubusercontent.com/92226302/180839895-91127171-646b-448d-8629-04961a65d5d9.jpg)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
