@@ -5,6 +5,7 @@ import './index.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Products from './components/Products';
+import Profilepage from "./components/Profilepage";
 import{BrowserRouter as Router,Switch,Route, Routes} from'react-router-dom'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <switch>
           <Routes>
             <Route path="/products" exact element={<Products />} />
+            <Route path="/profile" exact element={<Profilepage />} />
           </Routes>
         </switch>
 
