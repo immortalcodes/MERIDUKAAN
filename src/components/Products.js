@@ -16,6 +16,7 @@ const fetchProducts = () => {
       console.log(err);
     });
 };
+console.log(products)
 
 return (
     <div>
